@@ -11,14 +11,12 @@ import json
 USER_DATA ={
     "admin":"root"
 }
-# dbdir = "sqlite:///" + os.path.abspath(os.getcwd()) + "/database.db"
 
 app = Flask(__name__)
 db = SQLAlchemy(app)
-# app.config["SQLALCHEMY_DATABASE_URI"] = dbdir
-# app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
-# db = SQLAlchemy(app)
 auth = HTTPBasicAuth()
+
+
 @auth.verify_password
 def verify(username, password):
     if not(username and password):
@@ -29,7 +27,6 @@ def verify(username, password):
 @app.route('/sortlist/<int_list>', methods=['GET'])
 @auth.login_required
 def sortArray(int_list):
-    # Make sure it is a list that only contains integers.
     if not re.match(r'^\d+(?:,\d+)*,?$', int_list):
         return "Por favor colocar una serie de números únicamente", 400
     requestList = sum(int(i) for i in int_list.split(','))
@@ -38,10 +35,6 @@ def sortArray(int_list):
     sortedListFromRequest.sort()
     
     sortedListFromRequest = list(dict.fromkeys(sortedListFromRequest))
-
-
-    #return "{0}".format(result)
-    
     return jsonify({"sin clasificar": list(int(d) for d in str(requestList)) }
                   ,{"clasificado": sortedListFromRequest + duplicatedElements })   
 
@@ -136,8 +129,6 @@ def handleDatabaseUpdateDelete(id):
             return "No se pudo conectar al servidor", 500
     else:
             cursor = db_connection.cursor()
-            # cursor.execute('DROP DATABASE IF EXISTS db_finkargo_daag')
-            # cursor.execute('CREATE DATABASE db_finkargo_daag')
             cursor.execute("CREATE TABLE IF NOT EXISTS `usuarios` (`id` INT AUTO_INCREMENT PRIMARY KEY,`Nombres` VARCHAR(20), `Apellidos` VARCHAR(20),"
                 "`Edad` int(3), `Nacionalidad` VARCHAR(20))")
 
