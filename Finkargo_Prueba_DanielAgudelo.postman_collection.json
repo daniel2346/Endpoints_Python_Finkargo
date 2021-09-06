@@ -1,19 +1,19 @@
 {
-	"variables": [],
 	"info": {
-		"name": "Finkargo_Prueba_DanielAgudelo",
 		"_postman_id": "f3f060bf-7d1c-bc26-3f61-862ffb99ed78",
+		"name": "Finkargo_Prueba_DanielAgudelo",
 		"description": "Testeo de endpoints",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
 			"name": "Endponit 01 - ordenar lista",
 			"request": {
-				"url": "",
 				"method": "GET",
 				"header": [],
-				"body": {},
+				"url": {
+					"raw": ""
+				},
 				"description": "Ordenar lista"
 			},
 			"response": []
@@ -21,55 +21,175 @@
 		{
 			"name": "Endpoint 02 - Balance por mes",
 			"request": {
-				"url": "",
-				"method": "GET",
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "root",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
 				"header": [],
-				"body": {},
-				"description": ""
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"mes\": [\"Enero\",\"Febrero\",\"Marzo\",\"Abril\"],\r\n\t\"ventas\": [30500,35600,28300,33900],\r\n\t\"gastos\": [22000,23400,18100,40000]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/getbalances",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"getbalances"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "Endpoint 03 - Select Table",
 			"request": {
-				"url": "",
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "root",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
-				"body": {},
-				"description": ""
+				"url": {
+					"raw": "http://localhost:4000/database",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"database"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "Endpoint 03 - Insert Row",
 			"request": {
-				"url": "",
-				"method": "GET",
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "root",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
 				"header": [],
-				"body": {},
-				"description": ""
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"Nombres\" : \"Anderson\",\r\n\t\"Apellidos\": \"Amaya\",\r\n\t\"Edad\": 23,\r\n\t\"Nacionalidad\": \"Colombiano\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/database",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"database"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "Endpoint 03 - Update Row",
 			"request": {
-				"url": "",
-				"method": "GET",
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "root",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
 				"header": [],
-				"body": {},
-				"description": ""
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"Nombres\" : \"Anderson\",\r\n\t\"Apellidos\": \"Amaya\",\r\n\t\"Edad\": 23,\r\n\t\"Nacionalidad\": \"Colombiano\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/database/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"database",
+						"9"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "Endpoint 03 - Delete Row",
 			"request": {
-				"url": "",
 				"method": "GET",
 				"header": [],
-				"body": {},
-				"description": ""
+				"url": {
+					"raw": ""
+				}
 			},
 			"response": []
 		}
