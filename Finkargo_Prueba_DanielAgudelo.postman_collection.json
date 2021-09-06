@@ -1,160 +1,77 @@
 {
-	"id": "f3f060bf-7d1c-bc26-3f61-862ffb99ed78",
-	"name": "Finkargo_Prueba_DanielAgudelo",
-	"description": "Testeo de endpoints",
-	"order": [
-		"f46a2485-bc3e-2588-0cce-c3d3f7064c3e",
-		"ea91e086-f8a2-b148-3f50-93c5a0698049",
-		"c0ff5579-8dc8-df05-6c50-3c5a19f57b49",
-		"dc6bff26-675a-4d08-ab70-29911dd32b2d",
-		"01bfd501-ed59-e0a5-f718-80a74c1cfe75",
-		"f57f3e36-36ad-f951-84b9-448c4241494a"
-	],
-	"folders": [],
-	"folders_order": [],
-	"timestamp": 1630874065633,
-	"owner": "9777008",
-	"public": false,
-	"requests": [
+	"variables": [],
+	"info": {
+		"name": "Finkargo_Prueba_DanielAgudelo",
+		"_postman_id": "f3f060bf-7d1c-bc26-3f61-862ffb99ed78",
+		"description": "Testeo de endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
 		{
-			"id": "01bfd501-ed59-e0a5-f718-80a74c1cfe75",
-			"headers": "",
-			"headerData": [],
-			"url": "",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "GET",
-			"collectionId": "f3f060bf-7d1c-bc26-3f61-862ffb99ed78",
-			"data": null,
-			"dataMode": "params",
-			"name": "Endpoint 03 - Update Row",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1630891360516,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {}
-		},
-		{
-			"id": "c0ff5579-8dc8-df05-6c50-3c5a19f57b49",
-			"headers": "",
-			"headerData": [],
-			"url": "",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "GET",
-			"collectionId": "f3f060bf-7d1c-bc26-3f61-862ffb99ed78",
-			"data": null,
-			"dataMode": "params",
-			"name": "Endpoint 03 - Select Table",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1630877744548,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {}
-		},
-		{
-			"id": "dc6bff26-675a-4d08-ab70-29911dd32b2d",
-			"headers": "",
-			"headerData": [],
-			"url": "",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "GET",
-			"collectionId": "f3f060bf-7d1c-bc26-3f61-862ffb99ed78",
-			"data": null,
-			"dataMode": "params",
-			"name": "Endpoint 03 - Insert Row",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1630884221983,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {}
-		},
-		{
-			"id": "ea91e086-f8a2-b148-3f50-93c5a0698049",
-			"headers": "",
-			"headerData": [],
-			"url": "",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "GET",
-			"collectionId": "f3f060bf-7d1c-bc26-3f61-862ffb99ed78",
-			"data": null,
-			"dataMode": "params",
-			"name": "Endpoint 02 - Balance por mes",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1630874170193,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {}
-		},
-		{
-			"id": "f46a2485-bc3e-2588-0cce-c3d3f7064c3e",
-			"headers": "",
-			"headerData": [],
-			"url": "",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "GET",
-			"collectionId": "f3f060bf-7d1c-bc26-3f61-862ffb99ed78",
-			"data": null,
-			"dataMode": "params",
 			"name": "Endponit 01 - ordenar lista",
-			"description": "Ordenar lista",
-			"descriptionFormat": "html",
-			"time": 1630874108841,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {}
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Ordenar lista"
+			},
+			"response": []
 		},
 		{
-			"id": "f57f3e36-36ad-f951-84b9-448c4241494a",
-			"headers": "",
-			"headerData": [],
-			"url": "",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "GET",
-			"collectionId": "f3f060bf-7d1c-bc26-3f61-862ffb99ed78",
-			"data": null,
-			"dataMode": "params",
+			"name": "Endpoint 02 - Balance por mes",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Endpoint 03 - Select Table",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Endpoint 03 - Insert Row",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Endpoint 03 - Update Row",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
 			"name": "Endpoint 03 - Delete Row",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1630891360516,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"isFromCollection": true,
-			"collectionRequestId": "01bfd501-ed59-e0a5-f718-80a74c1cfe75"
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
 		}
 	]
 }
